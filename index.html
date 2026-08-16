@@ -572,7 +572,7 @@
   document.addEventListener('scroll', updateProgress, { passive:true });
   updateProgress();
 
-  // ---------- cursor glow ----------
+  // ---------- cursor na pakinang ----------
   const glow = document.getElementById('cursorGlow');
   if(!reduceMotion){
     window.addEventListener('pointermove', (e) => {
@@ -610,7 +610,7 @@
   }, { threshold: 0.5 });
   sections.forEach(s => s && io.observe(s));
 
-  // ---------- reveal on scroll, staggered by sibling order ----------
+  // ---------- reveal on scroll, tapos staggered by sibling order ----------
   const groups = document.querySelectorAll('.programs-grid, .activities-wrap');
   groups.forEach(group => {
     [...group.children].forEach((child, i) => {
@@ -638,7 +638,7 @@
     });
   }
 
-  // ---------- activity tabs: click + auto-advance ----------
+  // ---------- activity tabs: click tapos auto-advance ----------
   const tabButtons = document.querySelectorAll('.activity-tabs button');
   const panels = document.querySelectorAll('.activity-panel');
   let activeIndex = 0;
